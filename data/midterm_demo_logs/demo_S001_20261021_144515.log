@@ -1,0 +1,18 @@
+Network-only pilot: CPU load and memory limits are NOT applied.
+Bandwidth rate is configured with netem; iperf3 throughput is NOT retested in this run.
+S002-S005 (CPU/memory variations) are intentionally excluded.
+Selected: S001; repetitions/profile=1
+  S001: RTT=10ms, BW=100Mbps, round-trip loss=0.0%
+
+Preflight: checking OpenSSL TLS server and certificate...
+TLS preflight successful.
+
+Applying S001...
+Ping: RTT=10.386 ms; loss=0.0% (10 pings); one-way netem loss=0.0%
+S001 | X25519MLKEM768 | rep 1 | 53.47 ms | success=True
+S001 | MLKEM768 | rep 1 | 53.403 ms | success=True
+S001 | X25519 | rep 1 | 53.173 ms | success=True
+
+Finished: 3/3 TLS runs reported successful.
+Results saved to: /mnt/c/Users/Meerab/Desktop/Crypt FYP/FYP/data/raw_network_conditions_pilot_20261021_144515_367665.csv
+Removed temporary traffic shaping from both FYP interfaces.

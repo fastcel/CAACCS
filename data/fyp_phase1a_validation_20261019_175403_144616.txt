@@ -1,0 +1,50 @@
+FYP Phase 1A — Pilot dataset consolidation and validation
+UTC build timestamp: 20261019_175403_144616
+
+INPUT FILES (only these five; other S005 pilot file intentionally excluded):
+  raw_network_conditions_pilot_combined_63.csv: 63 records
+  raw_cpu_memory_pilot_S002_20261019_165955_050059.csv: 9 records
+  raw_cpu_memory_pilot_S003_20261019_170525_591988.csv: 9 records
+  raw_cpu_memory_pilot_S004_20261019_174138_164651.csv: 9 records
+  raw_cpu_memory_pilot_S005_20261019_174707_306217.csv: 9 records
+
+VALIDATION RESULTS:
+  Total records: 99
+  Scenarios: 11, each has 9 measured runs
+  TLS profiles: 3 per scenario, repetitions 1/2/3 present exactly once
+  Success flags: 99 true; negotiated groups match requested profiles
+  Unique new run IDs: 99
+  Scenario targets consistent with data/scenarios.csv
+  Memory controller byte ceiling and CPU monitor verified for S002-S005
+  Network-only controls explicitly remain false for S001, S006-S011
+
+RESEARCH LIMITATIONS:
+  This is a mixed-control PILOT, not a uniform fully-controlled dataset.
+  S001 and S006-S011 did NOT enforce scenario CPU-load or memory limits.
+  S002-S005 used shared-host CPU contention and cgroup memory CEILINGS,
+  not physical memory pressure; the stress also affects the TLS server.
+  Process elapsed_ms includes OpenSSL process startup and TCP/TLS operations;
+  it is NOT isolated TLS handshake or key exchange latency.
+  Three repetitions per cell are inadequate for ranking algorithms reliably.
+  CPU control applied=True for S002-S005 is provenance-derived from the
+  CPU workload scripts; it was absent from those source CSV headers.
+  Missing/inapplicable field values intentionally remain empty.
+  Do not use these pilot measurements as ML training labels.
+
+OUTPUTS:
+  fyp_phase1a_pilot_99_20261019_175403_144616.csv
+  fyp_phase1a_summary_33_20261019_175403_144616.csv
+  fyp_phase1a_validation_20261019_175403_144616.txt
+
+SCENARIO COUNTS:
+  S001: 9
+  S002: 9
+  S003: 9
+  S004: 9
+  S005: 9
+  S006: 9
+  S007: 9
+  S008: 9
+  S009: 9
+  S010: 9
+  S011: 9
