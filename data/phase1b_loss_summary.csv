@@ -1,0 +1,7 @@
+scenario_id,profile,successes,failures,mean_elapsed_ms,median_elapsed_ms,stdev_elapsed_ms,cv_pct,p95_elapsed_ms,min_elapsed_ms,max_elapsed_ms,low_sample_warning
+S010,MLKEM768,10,0,43.372,43.145,1.369,3.2,46.145,41.628,46.145,False
+S010,X25519,10,0,43.677,43.439,1.548,3.5,46.763,41.181,46.763,False
+S010,X25519MLKEM768,10,0,43.394,43.165,0.755,1.7,44.897,42.478,44.897,False
+S011,MLKEM768,10,0,49.388,43.981,12.08,24.5,78.402,43.198,78.402,False
+S011,X25519,10,0,43.67,43.334,1.445,3.3,46.42,42.424,46.42,False
+S011,X25519MLKEM768,10,0,154.604,44.739,347.181,224.6,1142.692,43.332,1142.692,False

@@ -36,7 +36,7 @@ DATA_DIR = ROOT / "data"
 # the verified CPU utilization of any individual TLS trial.
 SCENARIO_CPU_REQUEST = {
     "S002": 50,   # target 50%; observed 49.47% in initial TLS pilot
-    "S003": 90,   # target 80%; observed 80.70% in calibration
+    "S003": 80,   # target 80%; observed 80.70% in calibration
     "S004": 20,   # target 20%; observed 18.10% in calibration
     "S005": 20,   # target 20%; observed 18.10% in calibration
 }
