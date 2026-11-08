@@ -1,0 +1,4 @@
+scenario_id,profile,successes,failures,mean_elapsed_ms,median_elapsed_ms,stdev_elapsed_ms,cv_pct,p95_elapsed_ms,min_elapsed_ms,max_elapsed_ms,low_sample_warning
+S002,MLKEM768,10,0,57.463,55.975,3.787,6.6,65.555,54.12,65.555,False
+S002,X25519,10,0,70.805,55.838,30.775,43.5,143.868,50.864,143.868,False
+S002,X25519MLKEM768,10,0,59.75,56.744,8.248,13.8,79.28,53.125,79.28,False
