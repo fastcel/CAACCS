@@ -1,0 +1,21 @@
+PHASE 1C DEVELOPMENT DATASET V1 — FINALIZATION REPORT
+Status: PASS (development dataset only)
+Scenarios: 30 of 30 development
+Attempted connections: 1800
+Successful connections: 1800
+Failed connections: 0
+Derived scenario-by-profile rows: 90
+CPU samples per scenario: >= 15; observed CPU/RTT within validation tolerances
+Three source files per batch: raw CSV, CPU samples, and JSON metadata
+Plan: 36 factorial contexts; exactly 6 held-out scenarios with no raw batches
+Held-out IDs: C006, C008, C016, C017, C031, C033
+Source file hashes: SHA-256; manifest lists original bytes and filenames
+Missing measurements are not imputed; no observations removed or winsorized
+Only successful TLS attempts contribute to latency summaries; all attempts to success rate
+p95: nearest-rank (ceil(0.95 * n)) of successful TLS handshakes
+Bandwidth: configured, not measured; memory: ceiling, not RAM-pressure experiment
+CPU: shared-host contention; TLS includes network RTT and scheduling
+No labels, oracle winners, ML predictions, or held-out outcomes generated
+Next: review and commit v1 source files and outputs; finalize evaluation protocol
+
+FINALIZATION AUDIT COMPLETE
